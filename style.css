@@ -11,7 +11,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #0751d8;
+  background-color: #ffffff;
   padding: 15px 15px;
   margin-bottom: 0px;
 }
@@ -26,7 +26,7 @@ header nav {
 }
 header nav a {
   text-decoration: none;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 header button {
