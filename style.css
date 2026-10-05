@@ -11,30 +11,48 @@ header {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  gap: 15px;
   background-color: #ffffff;
-  padding: 15px 15px;
-  margin-bottom: 0px;
+  padding: 15px;
 }
+#menu { 
+  display: none;
+}
+
 
 header img {
-  width: 80px;
+  width: 55px;
 
 }
+
+header label img {
+
+width: 40px;
+}
 header nav {
+  display: none;
+  
+}
+
+#menu:checked ~ nav {
   display: flex;
-  gap: 40px;
-  margin-left: 50px;
-  align-items: center;
+  flex-direction: column;
+}
+
+header {
+
+  flex-wrap: wrap;
 }
 header nav a {
   text-decoration: none;
   color: rgb(0, 0, 0);
+  font-size: 10px;
 }
 
 header button {
   background: none;
   border: none;
-  color: white;
+  color: black;
   font-size: 24px;
 }
 .hero {
@@ -223,15 +241,7 @@ header button {
   font-size: 20px;
   margin: 10px 0 25px;
 }
-header nav {
-  gap: 40px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 44px;
-}
 
-header nav a {
-  font-size: 12px;
-}
 
 .hero h1 {
   animation: verschijnen 1s ease-in-out;
@@ -346,14 +356,14 @@ header {
 
 .nieuwste-artikelen {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr;
   gap: 20px;
   padding: 20px;
 }
 
 .artikel-groot img {
   width: 100%;
-  height: 500px;
+  height: 300px;
   object-fit: cover;
   display: block;
 }
@@ -367,7 +377,7 @@ header {
 }
 .artikelen-klein article img {
   width: 100%;
-  height: 240px;
+  height: 200px;
   object-fit: cover;
 }
 .kleine-tekst-balk {
@@ -383,4 +393,48 @@ header {
 .kleine-tekst-balk h2 {
   margin: 0;
   font-size: 16px;
+}
+
+
+
+@media (min-width:768px) {
+
+header {
+
+justify-content: flex-start;
+padding: 15px;
+}
+
+header img { 
+
+width: 80px;
+
+}
+
+header nav {
+
+gap: 40px;
+margin-left: 50px;
+}
+
+header nav a{
+
+font-size: 12px;  
+}
+
+.nieuwste-artikelen { 
+
+grid-template-columns: 2fr 1fr;
+
+}
+
+.artikel-groot img {
+
+height: 500px;
+}
+
+.artikelen-klein article img {
+
+height: 240px;
+}
 }
