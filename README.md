@@ -15,12 +15,24 @@ De instructie van deze leertaak staan in de [WIKI](https://github.com/fdnd-task/
   
 
 ## Beschrijving
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
+Voor HvanA heb ik een nieuw ontwerp gemaakt van de Home pagina. 
+![alt text](image.png)
+https://rayhana7.github.io/the-client-website/
 
 ## Kenmerken
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
+De site is gebouwd met HTML en CSS
+
+### HTML 
+Test
+#### Header
+Test
+#### Main
+Test
+
+### CSS 
+Met de CSS heb ik de pagina vormgegeven. 
+
+#### Responsive gedrag
 
 
 
