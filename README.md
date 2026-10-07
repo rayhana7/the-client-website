@@ -6,12 +6,13 @@ De instructie van deze leertaak staan in de [WIKI](https://github.com/fdnd-task/
 
 
 
-## Inhoudsopgave Readme
+## Inhoudsopgave
 
   * [Beschrijving](#beschrijving)
   * [Kenmerken](#kenmerken)
   * [Bronnen](#bronnen)
   * [Licentie](#licentie)
+  
 
 ## Beschrijving
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
