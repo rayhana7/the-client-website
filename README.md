@@ -9,18 +9,23 @@ De instructie van deze leertaak staan in de [WIKI](https://github.com/fdnd-task/
 ## Inhoudsopgave
 
   * [Beschrijving](#beschrijving)
+  * [Gebruik](#gebruik)
   * [Kenmerken](#kenmerken)
-  * [Bronnen](#bronnen)
   * [Licentie](#licentie)
   
 
 ## Beschrijving
 Voor HvanA heb ik een nieuw ontwerp gemaakt van de Home pagina. 
+
 ![alt text](image.png)
 https://rayhana7.github.io/the-client-website/
 
+## Gebruik 
+
+Op de home pagina Staat een duidelijke header. 
+
 ## Kenmerken
-De site is gebouwd met HTML en CSS
+De site is gebouwd met HTML en CSS. 
 
 ### HTML 
 Test
@@ -33,7 +38,8 @@ Test
 Met de CSS heb ik de pagina vormgegeven. 
 
 #### Responsive gedrag
-
+De pagina reageert op verschillende schermbreedtes. Bij de smalle weergave is een menu te zien waar je op kunt klikken om
+bij de verschillende onderwerpen te komen. Wanneer je op een breed scherm de pagina bekijkt zullen de onderwerpen in de header al te zien zijn.
 
 
 ## Licentie
