@@ -30,7 +30,8 @@ De site is gebouwd met HTML en CSS.
 ### HTML 
 Test
 #### Header
-Test
+Op de smalle weergave heb ik ervoor gekozen om in de header een menu te gebruiken om zo overzicht te behouden. 
+
 #### Main
 Test
 
