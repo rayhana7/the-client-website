@@ -12,8 +12,8 @@ header {
   align-items: center;
   justify-content: flex-start;
   gap: 15px;
-  background-color: #ffffff;
-  padding: 15px;
+  background-color: #0751d8;
+  padding: 20px 15px;
 }
 #menu { 
   display: none;
@@ -430,8 +430,6 @@ header {
  grid-template-rows: auto ;
  gap: 30px;
 
-
-
 }
 
 .nieuws-card{
@@ -440,10 +438,57 @@ header {
   width: 100%;
 }
   .artikel-groot img { 
-    height: 500px; 
+    height: 350px; 
   } 
  
   .artikelen-klein article img { 
     height: 240px; 
   } 
+  .direct-naar a { 
+  display: flex; 
+  align-items: center; 
+  gap: 15px; 
+  text-decoration: none; 
+  color: black; 
+  margin-bottom: 20px; 
+} 
+.direct-naar a {
+  border-bottom: 1px solid #0751d8;
+  padding-bottom: 15px;
+  width: 90%;
 }
+
+.direct-naar img { 
+  width: 120px; 
+  height: 80px; 
+  object-fit: cover; 
+} 
+
+.direct-naar h3 { 
+  font-size: 16px; 
+  margin: 0; 
+}
+.direct-naar { 
+  margin-top: 0 ;
+  margin-bottom: 0;
+}
+
+.onderwerpen {
+  padding: 15px 20px;
+}
+
+.onderwerpen-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  transform: translateY(-25px);
+}
+
+.onderwerpen-grid a {
+  color: black;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+} 
+
