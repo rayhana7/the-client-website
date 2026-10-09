@@ -26,6 +26,7 @@ header img {
 header label img {
 
 width: 40px;
+
 }
 header nav {
   display: none;
@@ -401,13 +402,20 @@ header {
 
 @media (min-width:768px) { 
  
+  header label {
+  display: none;
+}
+
+#menu {
+  display: none;
+}
   header { 
     justify-content: flex-start; 
-    padding: 15px; 
+    padding: 25px 15px; 
   } 
  
   header img {  
-    width: 80px; 
+    width: 100px; 
   } 
  
   .nieuwste-artikelen {  
