@@ -14,150 +14,151 @@ header {
   gap: 15px;
   background-color: #0751d8;
   padding: 20px 15px;
-}
-#menu { 
-  display: none;
-}
+  animation: headerSlideIn 1.5s ease-in-out;
 
-header img {
-  width: 55px;
+  img { 
+   width: 55px;
+
+  }
+
+  label img {
+   width: 40px;
+  }
+
+  nav {
+   display: none;
+   flex-direction: column;
+   position: fixed;
+   top: 70px;
+   left: 0;
+   width: 220px;
+   padding: 20px;
+   gap: 20px;
+   background: #F1E6D6;
+
+  a {
+   text-decoration: none;
+   color: rgb(0, 0, 0);
+   font-size: 16px;
+
 }
-
-header label img {
-width: 40px;
-
-}
-header nav {
-  display: none;
-  flex-direction: column;
-  position: fixed;
-  top: 70px;
-  left: 0;
-  width: 220px;
-  padding: 20px;
-  gap: 20px;
-  background: #F1E6D6;
-
 }
 
 #menu:checked ~ nav {
   display: flex;
-
 }
 
-header {
-
-  flex-wrap: wrap;
+  button { 
+   background: none;
+   border: none;
+   color: black;
+   font-size: 24px;
 }
-header nav a {
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-  font-size: 16px;
 }
 
-header button {
-  background: none;
-  border: none;
-  color: black;
-  font-size: 24px;
+  #menu { 
+   display: none;
 }
+
+
 .hero {
   position: relative;
+
+  h1 { 
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   margin: 0;
+   color: white;
+   font-size:60px;
+   text-align: center;
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   animation: appear 1s ease-in-out;
+
+   &::after {
+      content: "";
+      display: block;
+      width: 215px;
+      height: 1px;
+      background-color: white;
+      margin: 15px auto 0;
+      animation: line 1.5s ease-in-out;
+    }
+  }
 }
 
-.hero h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: 0;
-  color: white;
-  font-size:60px;
-  text-align: center;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-}
-.hero h1::after {
-  content: "";
-  display: block;
-  width: 215px;
-  height: 1px;
-  background-color: white;
-  margin: 15px auto 0;
-}
 
 .nieuws {
   padding: 20px 15px 20px;
 
+  h2 { 
+   font-size: 28px; 
+   margin-top: 40px;
+
+  }
 }
 
 .nieuws-grid{
-
     /* hier maak ik mijn grid aan :) */
   display: grid;
   /* hier zeg ik hoeveel kolomen voor mobile dus 1 */
   grid-template-columns: 1fr;
   /* hier zeg ik auto vult hij zelf in hoeveel */
- grid-template-rows: auto ;
-
+  grid-template-rows: auto ;
 
 }
-.nieuws h2 {
-  font-size: 28px; 
-  margin-top: 40px;
-}
+
 
 .nieuws-card {
   /* display: inline-block; */
-  width: 31%;
-  margin-right: 2.5%;
-  vertical-align: top;
-  gap:30px;
+   margin-right: 2.5%;
+   vertical-align: top;
+   gap:30px;
    width: 100%;
    position: relative;
    margin-top: 30px;
-}
 
-.nieuws-card:last-of-type {
-  margin-right: 0;
-}
-.nieuws h2 {
-  font-size: 28px;
-}
-.nieuws-card img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  display: block;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-}
-.nieuws-card img {
-  transition: transform 0.3s ease;
-}
-
-.nieuws-card img:hover {
-  transform: translateY(-8px);
-}
+   &:last-of-type { 
+      margin-right: 0;
+   }
 
 
-.nieuws-card::after {
-  content: "";
-  position: absolute;
-  top: 8px;
-  left: 8px;
-  width: 100%;
-  height: 300px;
-  background-color: #d9d9d9;
-  z-index: -1;
+  img { 
+   width: 100%;
+   height: 300px;
+   object-fit: cover;
+   display: block;
+   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+   transition: transform 0.3s ease;
+
+  &:hover {
+     transform: translateY(-8px);
+
+  }
 }
 
-.nieuws-card h3 {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  color: white;
-  font-size: 20px;
-  margin: 0;
+  &::after {
+     content: "";
+     position: absolute;
+     top: 8px;
+     left: 8px;
+     width: 100%;
+     height: 300px;
+     background-color: #d9d9d9;
+    z-index: -1;
 }
+
+  h3 {
+   position: absolute;
+   bottom: 10px;
+   left: 10px;
+   color: white;
+   font-size: 20px;
+   margin: 0;
+}
+}
+
 .meer-nieuws {
   display: block;
   width: fit-content;
@@ -166,29 +167,67 @@ header button {
   text-decoration: none;
   font-weight: bold;
 }
+
 .columns {
   padding: 20px 15px;
-  background-color:#FF5E31
+  background-color:#FF5E31;
+
+  h2 {
+   font-size: 28px;
+
+  }
 }
 
-.columns h2 {
-  font-size: 28px;
+.column-card {
+  display: inline-block;
+  width: 31%;
+  margin-right: 2.5%;
+  vertical-align: top;
+  position: relative;
+
+  &:last-of-type {
+     margin-right: 0;
+  }
+
+  img {
+   width: 100%;
+   height: 300px;
+   object-fit: cover;
+   display: block;
+   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+   transition: transform 0.3s ease;
+
+  &:hover { 
+     transform: translateY(-8px);
+
 }
-.column-card img {
-  width: 100%;
-  display: block;
 }
-.column-card h3 {
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-  background-color: white;
-  color: black;
-  padding: 12px;
-  font-size: 20px;
-  margin: 0;
+
+  &::after {
+     content: "";
+     position: absolute;
+     top: 8px;
+     left: 8px;
+     width: 100%;
+     height: 300px;
+     background-color: #d9d9d9;
+     z-index: -1;
 }
+
+  h3 {
+   position: absolute;
+   bottom: 0px;
+   left: 0px;
+   right: 0px;
+   background-color: white;
+   color: black;
+   padding: 12px;
+   font-size: 20px;
+   margin: 0;
+
+}
+}
+
 .meer-columns {
   display: block;
   width: fit-content;
@@ -197,62 +236,77 @@ header button {
   text-decoration: none;
   font-weight: bold;
 }
+
+
 .opinie {
   padding: 20px 15px;
+
+ h2 {
+   font-size: 28px;
+
+  }
 }
 
-.opinie h2 {
-  font-size: 28px;
+.opinie-card {
+  img {
+   width: 100%;
+   display: block;
+
 }
-.opinie-card img {
-  width: 100%;
-  display: block;
+
+  h3 {
+   font-size: 20px;
+   margin: 10px 0 25px;
+
 }
-.opinie-card h3 {
-  font-size: 20px;
-  margin: 10px 0 25px;
 }
+
 .video {
   padding: 20px 15px;
+
+  h2 {
+   font-size: 28px;
+
+  }
+} 
+
+.video-card{
+  img { 
+   width: 100%;
+   display: block;
+  }
+ 
+  h3{ 
+   font-size: 20px;
+   margin: 10px 0 25px;
+
+  }
 }
 
-.video h2 {
-  font-size: 28px;
-}
-.video-card img {
-  width: 100%;
-  display: block;
-}
-.video-card h3 {
-  font-size: 20px;
-  margin: 10px 0 25px;
-}
+
 .podcasts {
   padding: 20px 15px;
-}
-
-.podcasts h2 {
-  font-size: 28px;
-}
-.podcast-card img {
-  width: 100%;
-  display: block;
-}
-.podcast-card h3 {
-  font-size: 20px;
-  margin: 10px 0 25px;
-}
 
 
-.hero h1 {
-  animation: verschijnen 1s ease-in-out;
+  h2 {
+   font-size: 28px;
+  }
 }
 
-.hero h1::after {
-  animation: lijn 1.5s ease-in-out;
+.podcast-card {
+  img {
+   width: 100%;
+   display: block;
+  }
+
+   h3 {
+   font-size: 20px;
+   margin: 10px 0 25px;
+   }
 }
 
-@keyframes verschijnen {
+
+@keyframes appear {
   from {
     opacity: 0;
     transform: translate(-50%, -40%);
@@ -264,7 +318,7 @@ header button {
   }
 }
 
-@keyframes lijn {
+@keyframes line {
   from {
     width: 0;
   }
@@ -274,12 +328,9 @@ header button {
   }
 }
 
-header {
-  animation: headerOmhoog 1.5s ease-in-out;
-}
 
-@keyframes headerOmhoog {
-  from {
+@keyframes headerSlideIn {
+  from { 
     opacity: 0;
     clip-path: inset(100% 0 0 0);
   }
@@ -290,49 +341,20 @@ header {
   }
 }
 
-.column-card {
-  display: inline-block;
-  width: 31%;
-  margin-right: 2.5%;
-  vertical-align: top;
-  position: relative;
-}
-
-.column-card:last-of-type {
-  margin-right: 0;
-}
-
-.column-card img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  display: block;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease;
-}
-
-.column-card img:hover {
-  transform: translateY(-8px);
-}
-
-.column-card::after {
-  content: "";
-  position: absolute;
-  top: 8px;
-  left: 8px;
-  width: 100%;
-  height: 300px;
-  background-color: #d9d9d9;
-  z-index: -1;
-}
 .artikel-groot {
   position: relative;
-}
 
-.artikel-groot a {
-  display: block;
-  position: relative;
+  a {
+   display: block;
+   position: relative;
 }
+   img { 
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+   }
+  }
 
 .tekst-balk {
   position: absolute;
@@ -342,17 +364,18 @@ header {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 15px;
   color: white;
-}
 
-.tekst-balk h2 {
-  margin: 0 0 5px;
-  font-size: 24px;
-}
+  h2{
+   margin: 0 0 5px;
+   font-size: 24px;
 
-.tekst-balk h3 {
-  margin: 0;
-  font-size: 14px;
-  font-weight: normal;
+  }
+
+  h3{
+   margin: 0;
+   font-size: 14px;
+   font-weight: normal;
+}
 }
 
 .nieuwste-artikelen {
@@ -362,25 +385,22 @@ header {
   padding: 20px;
 }
 
-.artikel-groot img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  display: block;
-}
-
 .artikelen-klein {
   display: grid;
   gap: 20px;
-}
-.artikelen-klein article {
+
+article {
   position: relative;
-}
-.artikelen-klein article img {
+  
+
+img {
   width: 100%;
   height: 200px;
-  object-fit: cover;
+  object-fit: cover; 
 }
+}
+} 
+
 .kleine-tekst-balk {
   position: absolute;
   bottom: 10px;
@@ -389,14 +409,16 @@ header {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 10px;
   color: white;
+
+  h2 {
+   margin: 0;
+   font-size: 16px;
+  }
 }
 
-.kleine-tekst-balk h2 {
-  margin: 0;
-  font-size: 16px;
-}
 
-/*hier binnen werk ik aan de desktop versie (min-width*/
+
+/*hier binnen werk ik aan de desktop versie (min-width)*/
 
 @media (min-width:768px) { 
  
@@ -407,18 +429,19 @@ header {
 #menu {
   display: none;
 }
-  header { 
-    justify-content: flex-start; 
-    padding: 25px 15px; 
+
+header { 
+  justify-content: flex-start; 
+  padding: 25px 15px; 
   } 
  
-  header img {  
-    width: 100px; 
+header img {  
+  width: 100px; 
   } 
  
-  .nieuwste-artikelen {  
+.nieuwste-artikelen {  
    
-    grid-template-columns: 2fr 1fr; 
+  grid-template-columns: 2fr 1fr; 
   } 
 
   /* .nieuws{
@@ -440,7 +463,6 @@ header {
 
 .nieuws-card{
   margin-top: 60px;
-
   width: 100%;
 }
   .artikel-groot img { 
