@@ -1,44 +1,35 @@
+
 <!-- HTML -->
 <!DOCTYPE html>
 <html lang="nl">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>the client website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-
-  <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <title>the client website</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-
-  <body>
+<body>
 
 <header>
   <input type="checkbox" id="menu">
 
+  <label for="menu">
+    <img src="assets/Menu_logozwart.png" alt="">
+  </label>
 
-<label for="menu">
-  <img src="assets/Menu_logozwart.png" alt="">
-</label>
-
-  
-<a href="index.html">
-  <img src="https://hvana.nl/wp-content/uploads/2023/03/hvana_logo_wit-2025.svg"/>
-</a>
-
+  <a href="index.html">
+    <img src="https://hvana.nl/wp-content/uploads/2023/03/hvana_logo_wit-2025.svg"/>
+  </a>
 
   <nav>
     <a href="#">CONTACT</a>
     <a href="#">OVER ONS</a>
-    
   </nav>
-
- 
 </header>
 
-
 <section class="topics">
-
   <div class="topics-grid">
     <a href="#">Studenten</a>
     <a href="#">Onderwijs</a>
@@ -49,208 +40,186 @@
   </div>
 </section>
 
-
 <main>
 
-    <div class="intro-banner">
-  <img src="assets/banner.png" alt="Stadsbeeld bij zonsondergang">
-  <div class="intro-text">
-    <h1>Blijf op de hoogte van wat er speelt.</h1>
-    <p>
-      Ontdek het laatste nieuws, actuele ontwikkelingen
-      en verhalen die ertoe doen.
-    </p>
+  <div class="intro-banner">
+    <img src="assets/banner.png" alt="Stadsbeeld bij zonsondergang">
+    <div class="intro-text">
+      <h1>Blijf op de hoogte van wat er speelt.</h1>
+      <p>
+        Ontdek het laatste nieuws, actuele ontwikkelingen
+        en verhalen die ertoe doen.
+      </p>
+    </div>
   </div>
-</div>
 
   <section class="hero">
 
+    <div class="latest-articles">
 
-  <div class="latest-articles">
+      <article class="large-article">
+        <a href="https://www.youtube.com/watch?v=dFQz7ydA5f0">
+          <img src="assets/hotspots.png" alt="hotspots rondom de amstelcampus">
 
-  <article class="large-article">
-    <a href="https://www.youtube.com/watch?v=dFQz7ydA5f0">
-  <img src="assets/hotspots.png" alt="hotspots rondom de amstelcampus">
+          <div class="text-overlay">
+            <h2>Dit zijn de hotspots rondom de HvA-campussen!</h2>
+            <h3>In deze video nemen we je mee langs populaire hotspots rondom de verschillende HvA-campussen!</h3>
+          </div>
+        </a>
+      </article>
 
-  <div class="text-overlay">
-     <h2>Dit zijn de hotspots rondom de HvA-campussen!</h2>
-       <h3>In deze video nemen we je mee langs populaire hotspots rondom de verschillende HvA-campussen!</h3>
-  </div>
-    </a>
-  </article>
- 
-<div class="quick-links">
-  <h2>DIRECT NAAR</h2>
+      <div class="quick-links">
+        <h2>DIRECT NAAR</h2>
 
-  <a href="#">
-    <img src="assets/1enieuws_jpg.jpg" alt="">
-    <h3>Als AI vervanging voor de afgestudeerde hbo'er?</h3>
-  </a>
+        <a href="#">
+          <img src="assets/1enieuws_jpg.jpg" alt="">
+          <h3>Als AI vervanging voor de afgestudeerde hbo'er?</h3>
+        </a>
 
-  <a href="#">
-    <img src="assets/2enieuws_jpg.jpg" alt="">
-    <h3>Cirfood-personeel boos: 'We weten niet waar we aan toe zijn'</h3>
-  </a>
+        <a href="#">
+          <img src="assets/2enieuws_jpg.jpg" alt="">
+          <h3>Cirfood-personeel boos: 'We weten niet waar we aan toe zijn'</h3>
+        </a>
 
-  <a href="#">
-    <img src="assets/3enieuws_png.png" alt="">
-    <h3>Beleggen met DUO-geld: slim gerekend of te riskant?</h3>
-  </a>
+        <a href="#">
+          <img src="assets/3enieuws_png.png" alt="">
+          <h3>Beleggen met DUO-geld: slim gerekend of te riskant?</h3>
+        </a>
+      </div>
 
-</div>
+    </div>
+  </section>
 
-  </div>
+  <section class="latest-updates">
+    <h2>LAATSTE UPDATES</h2>
+
+    <ul>
+      <li>
+        <img src="assets/1enieuws_jpg.jpg" alt="">
+        <div class="update-text">
+          <span>16:30 • CAMPUS</span>
+          <h3>HvA opent nieuwe studieruimte voor studenten</h3>
+        </div>
+      </li>
+
+      <li>
+        <img src="assets/2enieuws_jpg.jpg" alt="">
+        <div class="update-text">
+          <span>15:45 • ONDERWIJS</span>
+          <h3>Nieuwe ontwikkelingen binnen het hoger onderwijs</h3>
+        </div>
+      </li>
+
+      <li>
+        <img src="assets/3enieuws_png.png" alt="">
+        <div class="update-text">
+          <span>14:20 • STUDENTEN</span>
+          <h3>Studenten organiseren actie op de campus</h3>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section class="news" id="news">
+    <h2>NIEUWS</h2>
+
+    <div class="news-grid">
+
+      <div class="news-card">
+        <img src="assets/1enieuws_jpg.jpg" alt="">
+        <h3>Als AI vervanging voor de afgestudeerde hbo'er? Zo'n vaart loopt het niet</h3>
+      </div>
+
+      <div class="news-card">
+        <img src="assets/2enieuws_jpg.jpg" alt="">
+        <h3>Cirfood-personeel boos: 'We weten niet waar we aan toe zijn'</h3>
+      </div>
+
+      <div class="news-card">
+        <img src="assets/3enieuws_png.png" alt="">
+        <h3>Beleggen met DUO-geld: slim gerekend of te riskant?</h3>
+      </div>
+
+    </div>
+
+    <a href="#" class="more-news">BEKIJK MEER →</a>
+  </section>
+
+  <section class="columns" id="columns">
+    <h2>COLUMNS</h2>
+
+    <article class="column-card">
+      <img src="assets/Column1_jpg.jpg" alt="">
+      <h3>'We laten studenten samenwerken zonder ze ooit te leren hoe je dat doet'</h3>
+    </article>
+
+    <article class="column-card">
+      <img src="assets/Column2_jpg.jpg" alt="">
+      <h3>'Niemand heeft je ingehaald maar ineens loop je achter'</h3>
+    </article>
+
+    <article class="column-card">
+      <img src="assets/Column3_jpg.jpg" alt="">
+      <h3>'In de week van de leercrisis stoppen wij met de boekenclub'</h3>
+    </article>
+
+    <a href="#" class="more-columns">MEER COLUMNS →</a>
+  </section>
+
+  <section class="opinion">
+
+    <article class="opinion-card">
+      <img src="assets/opinie1.jpg" alt="">
+    </article>
+
+    <article class="opinion-card">
+      <img src="assets/opinie2.jpg" alt="">
+    </article>
+
+    <article class="opinion-card">
+      <img src="assets/opinie3.jpg" alt="">
+    </article>
 
   </section>
 
-<section class="latest-updates">
-  <h2>LAATSTE UPDATES</h2>
+  <section class="video" id="video">
+    <h2>VIDEO</h2>
 
-  <ul>
-    <li>
-      <img src="assets/1enieuws_jpg.jpg" alt="">
-      <div class="update-text">
-        <span>16:30 . CAMPUS</span>
-      <h3>HvA opent nieuwe studieruimte voor studenten</h3>
-
-     </div>
-    </li>
-
-
-    <li> 
-      <img src="assets/2enieuws_jpg.jpg" alt="">
-      <div class="update-text">
-        <span>15:45 . ONDERWIJS</span>
-        <h3>Nieuwe ontwikkelingen binnen het hoger onderwijs</h3>
-
-      </div>
-    </li>
-
-    <li>
-      <img src="assets/3enieuws_png.png" alt="">
-      <div class="update-text">
-       <span>14:20 . STUDENTEN</span>
-       <h3>Studenten organiseren actie op de campus</h3>
-
-      </div>
-    </li>
-  </ul>
-</section>
-
-
-
-
-
-
-
-
-  <section class="news" id="news"> 
-       <h2>NIEUWS</h2>
-<!-- dit is je grid -->
-       <div class="news-grid">
-
-
-  <div class="news-card">
-    <img src="assets/1enieuws_jpg.jpg" alt="">
-       <h3>Als AI vervanging voor de afgestudeerde hbo'er?  Zo'n vaart loopt het niet</h3>
-  </div>
-
-
-  <div class="news-card">
-    <img src="assets/2enieuws_jpg.jpg" alt="">
-       <h3>Cirfood-personeel boos: 'We weten niet waar we aan toe zijn'</h3>
-  </div>
-
-
-  <div class="news-card">
-    <img src="assets/3enieuws_png.png" alt="">
-       <h3>Beleggen met DUO-geld: slim gerekend of te riskant?</h3>
-  </div>
-
-  </div>
-
-<a href="#" class="more-news">BEKIJK MEER →</a>
-
-</section> 
-
-
-
-
-<section class="columns" id="columns">
-  <h2>COLUMNS</h2>
-
-  <article class="column-card">
-    <img src="assets/Column1_jpg.jpg" alt="">
-       <h3>'We laten studenten samenwerken zonder ze ooit te leren hoe je dat doet'</h3>
-  </article>
-
-  <article class="column-card">
-    <img src="assets/Column2_jpg.jpg" alt="">
-        <h3>'Niemand heeft je ingehaald maar ineens loop je achter'</h3>
-  </article>
-
-  <article class="column-card">
-    <img src="assets/Column3_jpg.jpg" alt="">
-       <h3>'In de week van de leercrisis stoppen wij met de boekenclub'</h3>
-  </article>
-
-<a href="#" class="more-columns">MEER COLUMNS →</a>
-
-</section>
-<section class="opinion">
-  
-
-  <article class="opinion-card">
-    <img src="assets/opinie1.jpg" alt="">
-  </article>
-
-  <article class="opinion-card">
-    <img src="assets/opinie2.jpg" alt="">
-  </article>
-
-  <article class="opinion-card">
-    <img src="assets/opinie3.jpg" alt="">
-  </article>
-
-</section>
-<section class="video" id="video">
-   <h2>VIDEO</h2>
-
-  <article class="video-card">
-    <img src="assets/video1.jpg" alt="">
+    <article class="video-card">
+      <img src="assets/video1.jpg" alt="">
       <h3>Video titel 1</h3>
-  </article>
+    </article>
 
-  <article class="video-card">
-    <img src="assets/video2.jpg" alt="">
+    <article class="video-card">
+      <img src="assets/video2.jpg" alt="">
       <h3>Video titel 2</h3>
-  </article>
+    </article>
 
-  <article class="video-card">
-    <img src="assets/video3.jpg" alt="">
+    <article class="video-card">
+      <img src="assets/video3.jpg" alt="">
       <h3>Video titel 3</h3>
-  </article>
+    </article>
+  </section>
 
-</section>
-<section class="podcasts" id="podcasts">
-  <h2>PODCASTS</h2>
+  <section class="podcasts" id="podcasts">
+    <h2>PODCASTS</h2>
 
-  <article class="podcast-card">
-    <img src="assets/podcast1.jpg" alt="">
+    <article class="podcast-card">
+      <img src="assets/podcast1.jpg" alt="">
       <h3>Podcast titel 1</h3>
-  </article>
+    </article>
 
-  <article class="podcast-card">
-    <img src="assets/podcast2.jpg" alt="">
+    <article class="podcast-card">
+      <img src="assets/podcast2.jpg" alt="">
       <h3>Podcast titel 2</h3>
-  </article>
+    </article>
 
-  <article class="podcast-card">
-    <img src="assets/podcast3.jpg" alt="">
+    <article class="podcast-card">
+      <img src="assets/podcast3.jpg" alt="">
       <h3>Podcast titel 3</h3>
-  </article>
+    </article>
+  </section>
 
-</section>
 </main>
 
 <nav class="bottom-nav">
@@ -260,7 +229,7 @@
   </a>
 
   <a href="#news">
-  <span>▤</span>
+    <span>▤</span>
     News
   </a>
 
@@ -275,12 +244,11 @@
   </a>
 
   <a href="#podcasts">
-  <span>♧</span>
-  Podcasts
-
+    <span>♧</span>
+    Podcasts
   </a>
-  </nav>
+</nav>
 
 <script src="script.js"></script>
-  </body>
+</body>
 </html>
