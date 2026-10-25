@@ -28,11 +28,9 @@
 
 
   <nav>
-    <a href="#">NIEUWS</a>
-    <a href="#">COLUMNS</a>
-    <a href="#">OPINIE</a>
-    <a href="#">VIDEO</a>
-    <a href="#">PODCASTS</a>
+    <a href="#">CONTACT</a>
+    <a href="#">OVER ONS</a>
+    
   </nav>
 
  
@@ -60,7 +58,7 @@
 
   <article class="large-article">
     <a href="https://www.youtube.com/watch?v=dFQz7ydA5f0"></a>
-      <img src="assets/hotspots.png" alt="">
+      <img src="assets/hotspots.png" alt="hotspots rondom de amstelcampus">
 
   <div class="text-overlay">
      <h2>Dit zijn de hotspots rondom de HvA-campussen!</h2>
@@ -91,25 +89,28 @@
   </div>
 
   </section>
-  <section class="news">
+  <section class="news" id="news"> 
        <h2>NIEUWS</h2>
 <!-- dit is je grid -->
        <div class="news-grid">
 
-  <article class="news-card">
+
+  <div class="news-card">
     <img src="assets/1enieuws_jpg.jpg" alt="">
        <h3>Als AI vervanging voor de afgestudeerde hbo'er?  Zo'n vaart loopt het niet</h3>
-  </article>
+  </div>
 
-  <article class="news-card">
+
+  <div class="news-card">
     <img src="assets/2enieuws_jpg.jpg" alt="">
        <h3>Cirfood-personeel boos: 'We weten niet waar we aan toe zijn'</h3>
-  </article>
+  </div>
 
-  <article class="news-card">
+
+  <div class="news-card">
     <img src="assets/3enieuws_png.png" alt="">
        <h3>Beleggen met DUO-geld: slim gerekend of te riskant?</h3>
-  </article>
+  </div>
 
   </div>
 
@@ -120,7 +121,7 @@
 
 
 
-<section class="columns">
+<section class="columns" id="columns">
   <h2>COLUMNS</h2>
 
   <article class="column-card">
@@ -157,7 +158,7 @@
   </article>
 
 </section>
-<section class="video">
+<section class="video" id="video">
    <h2>VIDEO</h2>
 
   <article class="video-card">
@@ -176,7 +177,7 @@
   </article>
 
 </section>
-<section class="podcasts">
+<section class="podcasts" id="podcasts">
   <h2>PODCASTS</h2>
 
   <article class="podcast-card">
@@ -197,5 +198,34 @@
 </section>
 </main>
 
+<nav class="bottom-nav">
+  <a href="index.html" class="active">
+    <span>⌂</span>
+    Home
+  </a>
+
+  <a href="#news">
+  <span>▤</span>
+    News
+  </a>
+
+  <a href="#columns">
+    <span>✎</span>
+    Columns
+  </a>
+
+  <a href="#video">
+    <span>▷</span>
+    Video
+  </a>
+
+  <a href="#podcasts">
+  <span>♧</span>
+  Podcasts
+
+  </a>
+  </nav>
+
+<script src="script.js"></script>
   </body>
 </html>
