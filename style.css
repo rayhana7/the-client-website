@@ -164,12 +164,13 @@ header {
 
 
   img { 
-   width: 100%;
+    display: none;
+   /*width: 100%;
    height: 300px;
    object-fit: cover;
    display: block;
    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-   transition: transform 0.3s ease;
+   transition: transform 0.3s ease;*/
 
   &:hover {
      transform: translateY(-8px);
@@ -595,10 +596,18 @@ header img {
 
 }
 
-.news-card{
+.news-card {
   margin-top: 60px;
   width: 100%;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
 }
+
   .large-article img { 
     height: 350px; 
   } 
@@ -622,6 +631,7 @@ header img {
   width: 120px; 
   height: 80px; 
   object-fit: cover; 
+
 } 
 
 .quick-links h3 { 
