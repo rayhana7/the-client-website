@@ -419,10 +419,8 @@ header {
 }
 
 .latest-articles {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-  padding: 20px;
+  display: none; 
+
 }
 .latest-updates {
   margin: 25px 15px;
@@ -578,11 +576,12 @@ header {
 header img {  
   width: 100px; 
   } 
- 
-.latest-articles {  
+  
    
-  grid-template-columns: 2fr 1fr; 
-  } 
+.latest-articles {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
 
 .news-grid{
 
