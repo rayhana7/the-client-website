@@ -38,13 +38,14 @@ header {
   nav {
    display: none;
    flex-direction: column;
-   position: fixed;
-   top: 70px;
+   position: absolute;
+   top: 100%;
    left: 0;
    width: 220px;
    padding: 20px;
    gap: 20px;
-   background: #616161;
+   background: rgba(255, 255, 255, 0.75);
+   z-index: 1000;
 
   a {
    text-decoration: none;
@@ -68,6 +69,10 @@ header {
 
   #menu { 
    display: none;
+}
+
+.topics {
+  display: none;
 }
 
 .intro-banner {
@@ -561,8 +566,6 @@ border-radius: 8px;
 }
 
 
-
-
 /*hier binnen werk ik aan de desktop versie (min-width)*/
 
 @media (min-width:768px) { 
@@ -661,6 +664,7 @@ header img {
 }
 
 .topics {
+  display: block;
   padding: 15px 20px;
 }
 
